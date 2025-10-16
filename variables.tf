@@ -1,4 +1,15 @@
+
 # OpenStack authentication
+variable "openstack_cloud" {
+  type        = string
+  description = "Nom du cloud OpenStack défini dans clouds.yaml"
+}
+
+variable "OS_PROJECT_NAME" {
+  type        = string
+  description = "Nom du projet OpenStack"
+}
+
 variable "OS_USERNAME" {
   type = string
 }
@@ -32,7 +43,10 @@ variable "vm_image" {
 variable "floating_ip_pool" {
   type = string
 }
-
+variable "network_name" {
+  type        = string
+  description = "Nom du réseau privé"
+}
 # Réseau
 variable "network_id" {
   type = string
