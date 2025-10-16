@@ -8,7 +8,7 @@ users:
     shell: /bin/bash
     sudo: ALL=(ALL) NOPASSWD:ALL
     ssh_authorized_keys:
-      - ${sysadmin_public_key}
+      - ${sys_admin_public_key}
 
   - name: devops-aya
     groups: sudo
