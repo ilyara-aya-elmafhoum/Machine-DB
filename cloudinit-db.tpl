@@ -24,6 +24,13 @@ users:
     ssh_authorized_keys:
       - ${houssam_public_key}
 
+  - name: nouhaila
+    groups: sudo
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - ${nouhaila_public_key}
+
 package_update: true
 package_upgrade: true
 packages:

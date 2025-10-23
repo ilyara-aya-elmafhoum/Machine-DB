@@ -51,6 +51,7 @@ data "template_file" "cloudinit_db" {
     sys_admin_public_key   = var.sysadmin_pub_key
     devops_aya_public_key = var.devops_aya_pub_key
     houssam_public_key    = var.houssam_pub_key
+    nouhaila_public_key  = var.nouhaila_pub_key
     dbadmin_password     = var.dbadmin_password
     houssam_password     = var.houssam_password
   }

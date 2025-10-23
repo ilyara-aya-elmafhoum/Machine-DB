@@ -82,6 +82,12 @@ variable "devops_aya_pub_key" {
 variable "houssam_pub_key" {
   type = string
 }
+
+variable "nouhaila_pub_key" {
+  type = string
+}
+
+
 # Mots de passe PostgreSQL (sensibles)
 variable "dbadmin_password" {
   type      = string
